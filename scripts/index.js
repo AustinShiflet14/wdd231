@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       creditDisplay.textContent = `The total credits for courses listed above is ${total}`;
     }
 
-    // Event listeners using class selectors
     document.getElementById("allbtn").addEventListener("click", () => {
       showCourses(["wdd", "cse"]);
     });
@@ -43,6 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
       showCourses(["cse"]);
     });
 
-    // Show all by default on load
     showCourses(["wdd", "cse"]);
 });
