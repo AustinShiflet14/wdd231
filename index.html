@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week01 WDD231</title>
+    <meta name="author" content="Austin Shiflet">
+    <meta name="description" content="Week01 assingment for wdd231">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/anthropic.svg" alt="Logo" id="logo" width="16" height="16">
+        <span>Austin Shiflet</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="main">    
+        <section class="about">
+                <h2>About Me</h2>
+                <p>My name is Austin Shiflet, I am originally from Arizona but currently live in Utah. I served my mission in the Yakima, Washington spanish speaking mission, where I met my wonderful wife, Maya. I have lived in South Jordan, Utah since September of 2024, and am currently working full time as a delivery driver for Codale, an electrical supplier. I work and go to school full time, and I love to work on cars and play sports in my free time.</p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="profile" width="200">
+            </section>
+        </div>
+        <section class="allcourses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="allbtn">All</button>
+                <button id="csebtn">CSE</button>
+                <button id="wddbtn">WDD</button>
+            </div>
+
+            <div class="course wdd">WDD 130</div>
+            <div class="course wdd">WDD 131</div>
+            <div class="course wdd">WDD 231</div>
+            <div class="course cse">CSE 110</div>
+            <div class="course cse">CSE 111</div>
+            <div class="course cse">CSE 210</div>
+            <p id="creditTotal"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/austin.shiflet.2025" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/AustinShiflet14" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/austin-shiflet-648bba29a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> · Austin Shiflet · South Jordan, Utah</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

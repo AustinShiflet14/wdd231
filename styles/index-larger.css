@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+    :root {
+    --primary-color: #333333;
+    --secondary-color: #F6EEE6;
+    --font-family: 'Bona Nova SC', serif;
+    }
+
+    
+    header, nav, main, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 24px auto;
+        border: none;
+    }
+
+    header span {
+        font-size: 1.5rem;;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+        color: var(--primary-color);
+        background-color: var(--primary-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 15px 121px;
+    }
+    .navigation a:hover {
+        background-color: #ccc;
+        color: var(--primary-color);
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    .allcourses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .allcourses h2, .buttons, p {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .course {
+        display: flex;
+        flex-direction: row;
+    }
+    .about p {
+        font-size: 1.5rem;
+    }
+}
