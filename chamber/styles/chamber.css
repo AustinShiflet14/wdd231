@@ -21,22 +21,25 @@
 /*******Header*******/
 header {
     display: grid;
-    grid-template-columns: 55px auto 44px;
+    grid-template-columns: 75px auto 44px;
+    padding: 10px;
+    align-items: end;
+    column-gap: 8px;
     background-color: var(--primary-color);
-    margin: 0 10px 0 10px;
 }
 
 header span {
     font-weight: 700;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
     align-self: center;
     background-color: var(--primary-color);
+    
 }
 
 header img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin: 2px;
 }
 
@@ -53,7 +56,7 @@ header nav {
     color: var(--text-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 7px;
+    padding-bottom: 20px;
 }
 
 .hamburger::after{
@@ -95,4 +98,54 @@ header nav {
 
 .navigation a:hover {
     background-color: var(--secondary-color);
+}
+
+/**********Footer**********/
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 10px;
+    text-align: center;
+    line-height: .3rem;
+}
+
+.yes {
+    font-weight: 700;
+}
+
+.info, .info p, .student, .student p {
+    background-color: var(--primary-color);
+    text-align: left;
+}
+
+#currentyear {
+    background-color: var(--primary-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    background-color: var(--primary-color);
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--text-color) solid 1px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+}
+
+.social a:hover {
+    background-color: #ddd;
 }
