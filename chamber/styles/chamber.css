@@ -1,0 +1,97 @@
+/*****Design Brief for Chamber of Commerce Directory Page*****/
+/* Primary Color: #A0BEE5
+   Secondary Color: #9B8FD6
+   Background Color: #F2F5FA
+   Text Color: #2C2C2C
+   Font Family: Bona Nova SC
+*****/
+:root {
+    --primary-color: #A0BEE5;
+    --secondary-color: #9B8FD6;
+    --background-color: #F2F5FA;
+    --text-color: #2C2C2C;
+    --font-family: 'Bona Nova SC', serif;
+}
+
+* {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+/*******Header*******/
+header {
+    display: grid;
+    grid-template-columns: 55px auto 44px;
+    background-color: var(--primary-color);
+    margin: 0 10px 0 10px;
+}
+
+header span {
+    font-weight: 700;
+    font-size: .8rem;
+    text-align: left;
+    align-self: center;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****Hamburger Menu*****/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D4058;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after{
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+/*****Navigation*****/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}

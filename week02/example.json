@@ -1,0 +1,29 @@
+{
+    "familyName": "Alred's",
+    "move_in_date": "2024-10-28",
+    "number_in_family": 4,
+    "visited_by_bishopric": true,
+    "individuals": [
+        {
+            "name": "John Alred",
+            "gender": "male",
+            "birthdate": "1979-03-25"
+        },
+        {
+            "name": "Jane Alred",
+            "gender": "female",
+            "birthdate": "1981-05-15"
+        },
+        {
+            "name": "Jimmy Alred",
+            "gender": "male",
+            "birthdate": "2007-04-10"
+            
+        },
+        {
+            "name": "Jill Alred",
+            "gender": "female",
+            "birthdate": "2010-05-12"
+        }
+    ]
+}
