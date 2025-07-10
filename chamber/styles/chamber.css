@@ -50,9 +50,10 @@ header nav {
 .hamburger {
     background: none;
     border: none;
-    color: #3D4058;
+    color: var(--text-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 7px;
 }
 
 .hamburger::after{
