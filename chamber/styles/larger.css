@@ -1,3 +1,53 @@
 @media screen and (min-width: 768px) {
-   
+    header, nav, main, footer {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 75px auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social a:hover {
+        background-color: var(--primary-color);
+    } 
+
+    .list .member-card {
+        line-height: 10px;
+    }   
 }

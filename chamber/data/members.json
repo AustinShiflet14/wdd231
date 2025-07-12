@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sato Soaps",
+    "address": "San Tan Valley, AZ",
+    "phone": "",
+    "website": "https://www.satosoaps.com/?srsltid=AfmBOoqDuKNNoN0onQTRVGR9OdU6nNg7fBXd2YLUhwF3XAzEJI0qd2ym",
+    "image": "satosoaps.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Schnepf Farms",
+    "address": "24810 S Rittenhouse Rd, Queen Creek, AZ 85142",
+    "phone": "480-987-3100",
+    "website": "https://schnepffarms.com/",
+    "image": "schnepffarms.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Dust Devil Cleaning, LLC",
+    "address": "E Graythorn Way, Coolidge, AZ",
+    "phone": "520-280-4024",
+    "website": "https://www.facebook.com/DustDevilCleaningLLC/",
+    "image": "dustdevilcleaning.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "East Valley Styles",
+    "address": "3071 W Hunt Hwy #101, San Tan Valley, AZ",
+    "phone": "480-877-7026",
+    "website": "https://www.vagaro.com/eastvalleystyles",
+    "image": "eastvalleystyles.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Encore Restaurant",
+    "address": "310 W Frontier Street, Eloy, AZ",
+    "phone": "520-466-3473",
+    "website": "https://www.facebook.com/eatatencore/",
+    "image": "encorerestaurant.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "AZ Turf Installers",
+    "address": "36927 N Andravida Rd, San Tan Valley, AZ 85140",
+    "phone": "480-637-5342",
+    "website": "https://www.az-turfinstallers.com/",
+    "image": "azturfinstallers.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Country Rose Boutique",
+    "address": "39427 North George Ave, San Tan Valley, AZ 85140",
+    "phone": "602-859-4782",
+    "website": "https://www.countryroseboutiqueaz.com/",
+    "image": "countryroseboutique.png",
+    "membershipLevel": 1
+  }
+]
