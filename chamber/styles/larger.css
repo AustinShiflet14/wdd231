@@ -50,4 +50,47 @@
     .list .member-card {
         line-height: 10px;
     }   
+
+    .mainindex {
+        display: grid;
+        grid-template-columns: 450px 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 50px;
+        border-bottom: solid 3px var(--text-color);
+    }
+    
+    .weather1, .weather2, .events {
+        border: 1px solid #ccc;
+        height: 100%;
+        border-radius: 5px;
+        padding-top: -20px;
+        background-color: var(--background-color);
+    }
+
+    .weather1 {
+        grid-template-columns: 100px auto;
+        margin-left: 0px;
+    }
+
+    .weather1 img {
+        margin: 0 0 0 5px;
+        background-color: var(--primary-color);
+        border-radius: 15px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .weather-data {
+        font-size: 1rem;
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+
+    .weather2 p{
+        padding-left: 10px;
+    }
+
+    .spotlight-grid {
+        margin-top: 50px;
+    }
 }
