@@ -290,7 +290,7 @@ a:hover {
     text-align: center;
 }
 
-main a {
+.joinbtn {
     display: block;
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -305,7 +305,7 @@ main a {
     width: 300px;
 }
 
-main a:hover {
+.joinbtn:hover {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-size: 1.3rem;
