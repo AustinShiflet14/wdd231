@@ -92,11 +92,11 @@ header nav {
     border-bottom: solid 1px #ddd;
 }
 
-.navigation li.current {
-    background-color: var(--primary-color);
+.navigation li.current a{
+    background-color: #ccc;
 }
 
-.navigation a:hover {
+.navigation a:hover, .navigation li.current a:hover {
     background-color: var(--secondary-color);
 }
 
