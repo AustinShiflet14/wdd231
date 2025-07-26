@@ -312,3 +312,198 @@ a:hover {
     border-radius: 20px;
     text-decoration: none;
 }
+
+/********Join Page Form**********/
+form {
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.formh, .formp {
+    margin-left: 5px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+.form-body {
+    font-size: 1.2rem;
+}
+
+.form-header input[type="text"],
+.form-header input[type="email"],
+.form-header input[type="tel"],
+.form-header select,
+.form-header textarea {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    font-size: 1.1rem;
+}
+
+.form-body input[type="text"], 
+.form-body input[type="email"],
+.form-body select,
+.form-body textarea  {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    font-size: 1rem;
+}
+
+input:required,
+textarea:required,
+select:required {
+  box-shadow: inset 4px 0 0 0 red;
+  padding-left: 8px;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  box-shadow: inset 4px 0 0 0 green;
+  padding-left: 8px; 
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: none;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.notrequired input[type="text"],
+.notrequired select,
+.notrequired textarea {
+    box-shadow: none;
+    border: 1px solid var(--text-color);
+}
+
+
+/**********Modals**********/
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fadeIn 1s ease-in;
+  margin-bottom: 30px;
+}
+
+.card.np, .card.np h3 {
+    background-color: var(--primary-color);
+}
+
+.card.bronze, .card.bronze h3 {
+    background-color: burlywood;
+}
+
+.card.gold, .card.gold h3 {
+    background-color: gold;
+}
+
+.card.silver, .card.silver h3 {
+    background-color: silver;
+}
+
+.card {
+  border: 2px solid var(--text-color);
+  padding: 1rem;
+  background: var(--background-color);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: slideUp 1s forwards;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.card a {
+  text-decoration: none;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  margin: 10px 0px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: var(--background-color);
+  margin: 10% auto;
+  padding: 1rem;
+  max-width: 400px;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
