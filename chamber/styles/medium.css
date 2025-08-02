@@ -1,0 +1,12 @@
+@media screen and (min-width: 38rem) {
+    .place-card {
+    grid-template-areas: 
+    "photo title"
+    "photo description"
+    "photo address"
+    }
+
+    .place-card p, .place-card address {
+        padding-left: 10px
+    }
+}

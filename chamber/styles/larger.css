@@ -1,6 +1,6 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 64rem) {
     header, nav, main, footer {
-        max-width: 950px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     
@@ -98,4 +98,18 @@
         grid-template-columns: 500px 1fr;
         gap: 20px;
     }
+
+    .allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .place-card {
+    grid-template-areas: 
+    "title title"
+    "photo description"
+    "photo address"
+    }
+
+   
 }

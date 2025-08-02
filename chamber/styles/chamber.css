@@ -508,3 +508,43 @@ input[type="submit"]:hover {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/**********Discover Page**********/
+.place-card {
+    margin: 1rem 8px;
+    padding: 5px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "photo"
+    "description"
+    "address"
+}
+
+.place-card h2 {
+    grid-area: title;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.place-card img {
+    grid-area: photo;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.place-card p {
+    grid-area: description;;
+}
+
+.place-card address {
+    grid-area: address;
+    margin-top: 5px;
+    color: var(--text-color);
+}
