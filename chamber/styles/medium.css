@@ -4,9 +4,18 @@
     "photo title"
     "photo description"
     "photo address"
+    "photo button";
     }
 
     .place-card p, .place-card address {
         padding-left: 10px
+    }
+
+    .place-card img:hover {
+    opacity: .5;
+    }
+
+    .place-card:hover {
+    box-shadow: #2C2C2C 0px 0px 10px;
     }
 }

@@ -516,6 +516,7 @@ input[type="submit"]:hover {
     border: 1px solid var(--text-color);
     border-radius: 8px;
     overflow: hidden;
+    background-color: var(--background-color);
     
     display: grid;
     grid-template-areas: 
@@ -523,6 +524,7 @@ input[type="submit"]:hover {
     "photo"
     "description"
     "address"
+    "button";
 }
 
 .place-card h2 {
@@ -547,4 +549,27 @@ input[type="submit"]:hover {
     grid-area: address;
     margin-top: 5px;
     color: var(--text-color);
+}
+
+.place-card a {
+    grid-area: button;
+    width: 200px;
+    text-align: center;
+    margin: 15px auto 10px auto;
+    padding: 10px 0;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    color: var(--text-color);
+}
+
+.place-card a:hover {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+aside {
+    text-align: center;
 }
