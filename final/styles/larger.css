@@ -1,0 +1,69 @@
+@media screen and (min-width: 64rem) {
+    header, nav, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 150px 1fr 500px;
+    }
+
+    header span {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navigation1 {
+        display: block;
+        width: 100%;
+        background-color: var(--primary-color);
+        margin: 0 auto;
+    }
+    .navigation1 ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        background-color: var(--primary-color);
+        list-style-type: none;
+        gap: 20px;
+    }
+
+    .navigation1 a {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 30px;
+        border-radius: 15px 150px ;
+        border-color: var(--primary-color);
+    }
+
+    .navigation1 a:hover, .current a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        border-radius: 15px 150px;
+        text-decoration: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .current a, .cuurent a:hover{
+        font-weight: bold;
+        border-radius: 150px 15px;
+        font-size: 1.4rem;
+    }
+}
