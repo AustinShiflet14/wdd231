@@ -43,16 +43,14 @@ if (modal && openBtn && closeBtn) {
   };
 }
 
- // --- Timestamp for form hidden input ---
-  const timestampElem = document.getElementById("timestamp");
+const timestampElem = document.getElementById("timestamp");
   if (timestampElem) {
     const now = new Date();
     const formatted = now.toLocaleString();
     timestampElem.value = formatted;
   }
 
-  // --- Display form data on thankyou.html ---
-  function getQueryParams() {
+function getQueryParams() {
     const params = new URLSearchParams(window.location.search);
     return Object.fromEntries(params.entries());
   }
