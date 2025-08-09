@@ -187,7 +187,7 @@ picture img {
     font-style: italic;
     border-radius: 10px;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .modal {
