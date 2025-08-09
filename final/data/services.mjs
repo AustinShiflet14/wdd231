@@ -1,0 +1,92 @@
+export const services = [
+  {
+    "name": "Exterior Wash",
+    "description": "Thorough hand wash removing dirt & grime",
+    "duration": "30-45 minutes",
+    "price": "$25 - $40"
+  },
+  {
+    "name": "Interior Vacuuming",
+    "description": "Deep vacuuming of carpets, seats, and mats",
+    "duration": "30 minutes",
+    "price": "$30 - $50"
+  },
+  {
+    "name": "Paint Correction",
+    "description": "Removes scratches and swirl marks",
+    "duration": "2-4 hours",
+    "price": "$150 - $300"
+  },
+  {
+    "name": "Ceramic Coating",
+    "description": "Long-lasting paint protection",
+    "duration": "4-6 hours",
+    "price": "$400 - $800"
+  },
+  {
+    "name": "Engine Bay Cleaning",
+    "description": "Cleaning and degreasing under the hood",
+    "duration": "45 minutes",
+    "price": "$50 - $100"
+  },
+  {
+    "name": "Headlight Restoration",
+    "description": "Restores clarity to foggy, yellowed headlights",
+    "duration": "30-60 minutes",
+    "price": "$40 - $80"
+  },
+  {
+    "name": "Clay Bar Treatment",
+    "description": "Removes contaminants from paint surface",
+    "duration": "1-2 hours",
+    "price": "$75 - $150"
+  },
+  {
+    "name": "Interior Shampoo",
+    "description": "Deep cleaning of carpets and upholstery",
+    "duration": "1-2 hours",
+    "price": "$100 - $200"
+  },
+  {
+    "name": "Odor Removal",
+    "description": "Removes unwanted smells using ozone or sprays",
+    "duration": "30-45 minutes",
+    "price": "$50 - $100"
+  },
+  {
+    "name": "Glass Polishing",
+    "description": "Removes scratches and haze from windows",
+    "duration": "30 minutes",
+    "price": "$40 - $70"
+  },
+  {
+    "name": "Wheel Detailing",
+    "description": "Deep cleaning and polishing of rims and tires",
+    "duration": "45 minutes",
+    "price": "$50 - $100"
+  },
+  {
+    "name": "Leather Conditioning",
+    "description": "Cleans and nourishes leather seats and surfaces",
+    "duration": "45 minutes",
+    "price": "$60 - $120"
+  },
+  {
+    "name": "Wax Application",
+    "description": "Adds protective wax layer on paint",
+    "duration": "1-2 hours",
+    "price": "$80 - $150"
+  },
+  {
+    "name": "Pet Hair Removal",
+    "description": "Specialized cleaning to remove pet hair",
+    "duration": "30-60 minutes",
+    "price": "$50 - $90"
+  },
+  {
+    "name": "Convertible Top Care",
+    "description": "Cleaning and protecting fabric convertible roofs",
+    "duration": "1 hour",
+    "price": "$70 - $130"
+  }
+]

@@ -7,6 +7,7 @@
     <meta name="author" content="Austin Shiflet">
     <meta name="description" content="Final Project for WDD231, my website, 'CrystaLDetiling,' will showcase the skills and principles I have learned in this class to create a fully functional website.">
     <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon1.ico">
     <script src="scripts/final.js" defer></script>
@@ -42,16 +43,28 @@
             <p>From deep-clean paint correction and ceramic coatings to spotless interiors and protective treatments, we handle every job with the same meticulous attention to detail — because your car isn't just transportation, it's an investment, a statement, and a reflection of you.</p>
             <p>Experience the crystal-clear difference — where quality meets perfection, and every ride leaves looking showroom new.</p>
         </div>
-        <picture class="hero">
-            <source srcset="images/hero.webp" media="(min-width: 600px)" width="1100" height="735">
-            <img src="images/hero-small.webp" alt="hero-small" width="300" height="525">
-        </picture>
+        <div class="heroA">
+            <picture class="hero">
+                <source srcset="images/hero.webp" media="(min-width: 600px)" width="1100" height="735">
+                <img src="images/hero-small.webp" alt="hero-small" loading="lazy" width="300" height="525">
+            </picture>
+            <button id="openModal" class="openModal">Common Misconceptions About Detailing</button>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Detailing Is More Than Just Cleaning</h2>
+                <p>A quick wash might make your car look nice today, but true detailing protects it for the long haul. We go beyond soap and water — restoring paint, shielding it from UV rays, removing deep grime, and bringing life back to every surface.</p>
+                <p>It's not just about looking clean — it's about preserving your car's beauty, value, and performance for years to come. Give your ride the care it deserves—because it's not just clean, it's crystal clear quality.</p>
+                <a href="contact.html" class="btn">Get a Quote in 30 minutes!</a>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="social">
             <p>Click the youtube button for the link to the video per the final requirements! Thank you so much!</p>
         </div>
-        <a class="youtube" href="https://www.youtube.com/austin.shiflet.2025" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16"></a>
+        <a class="youtube" href="https://www.youtube.com" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16" height="16"></a>
         <div class="student">
             <p>WDD231 Final Project</p>
             <p>Austin Shiflet</p>
