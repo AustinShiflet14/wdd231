@@ -1,4 +1,4 @@
-export const services = [
+[
   {
     "name": "Exterior Wash",
     "description": "Thorough hand wash removing dirt & grime",
