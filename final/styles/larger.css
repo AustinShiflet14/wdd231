@@ -71,4 +71,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .formp {
+        text-align: center;
+    }
 }
