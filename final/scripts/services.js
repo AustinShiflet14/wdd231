@@ -1,4 +1,6 @@
 // services.js
+import { getServices } from './servicesData.js';
+
 const container = document.getElementById('services-container');
 const toggleFavoritesBtn = document.querySelector('main button');
 
@@ -7,39 +9,27 @@ let favorites = JSON.parse(localStorage.getItem(favoriteKey)) || [];
 
 function saveFavorites() {
   localStorage.setItem(favoriteKey, JSON.stringify(favorites));
-}
+    }
 
-async function getServices() {
-  try {
-    const response = await fetch('./data/services.json');
-    if (!response.ok) throw new Error('Failed to fetch services');
-    const services = await response.json();
-    return services;
-  } catch (error) {
-    console.error('Error fetching services:', error);
-    return [];
-  }
-}
+    function renderServices(services) {
+    container.innerHTML = '';
+    services.forEach(service => {
+        const card = document.createElement('div');
+        card.classList.add('service-card');
+        card.dataset.serviceId = service.id;
 
-function renderServices(services) {
-  container.innerHTML = '';
-  services.forEach(service => {
-    const card = document.createElement('div');
-    card.classList.add('service-card');
-    card.dataset.serviceId = service.id;
-
-    card.innerHTML = `
-      <button class="favorite-btn" aria-label="Toggle favorite">
-        <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" 
-          fill="var(--fill-color)" stroke="var(--stroke-color)" stroke-width="2" >
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-      </button>
-      <h2>${service.name}</h2>
-      <p><strong>Description:</strong> ${service.description}</p>
-      <p><strong>Duration:</strong> ${service.duration}</p>
-      <p><strong>Price:</strong> ${service.price}</p>
-    `;
+        card.innerHTML = `
+        <button class="favorite-btn" aria-label="Toggle favorite">
+            <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" 
+            fill="var(--fill-color)" stroke="var(--stroke-color)" stroke-width="2" >
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        <h2>${service.name}</h2>
+        <p><strong>Description:</strong> ${service.description}</p>
+        <p><strong>Duration:</strong> ${service.duration}</p>
+        <p><strong>Price:</strong> ${service.price}</p>
+        `;
 
     container.appendChild(card);
 
@@ -91,4 +81,4 @@ if (toggleFavoritesBtn) {
   });
 }
 
-init();
+    init();
